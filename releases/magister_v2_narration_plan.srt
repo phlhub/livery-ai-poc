@@ -15,7 +15,7 @@ Step back, and the problem becomes clear. The information isn’t disconnected. 
 Not a chatbot. Not another automation. Magister is a persistent intelligence layer that understands the account, maintains context, and notices when something changes.
 
 5
-00:00:42,400 --> 00:00:48,400
+00:00:43,300 --> 00:00:49,300
 Specialized agents take ownership of specific responsibilities—and continuously monitor them over time.
 
 6
