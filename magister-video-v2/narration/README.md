@@ -21,7 +21,7 @@ Times are in the V2 film, from 0:00. Durations assume about 145 wpm.
 | `line02.wav` | 0:07.4 | 10.5 s | Meetings, messages, support, consumption, delivery, risk… each living in its own system. Keeping it all connected quietly consumes much of a CSAM’s week. |
 | `line03.wav` | 0:22.6 | 7.0 s | Step back, and the problem becomes clear. The information isn’t disconnected. The operating model is. |
 | `line04.wav` | 0:30.9 | 11.0 s | Not a chatbot. Not another automation. Magister is a persistent intelligence layer that understands the account, maintains context, and notices when something changes. |
-| `line05.wav` | 0:42.4 | 6.0 s | Specialized agents take ownership of specific responsibilities—and continuously monitor them over time. |
+| `line05.wav` | 0:43.3 | 6.0 s | Specialized agents take ownership of specific responsibilities—and continuously monitor them over time. |
 | `line06.wav` | 0:52.4 | 5.0 s | Traditional automation follows a script. It’s triggered, it runs, and it stops. |
 | `line07.wav` | 1:01.3 | 5.3 s | An agent owns a responsibility. It observes, understands, acts—and keeps watching. |
 | `line08.wav` | 1:09.6 | 11.2 s | The account no longer has to be reconstructed from memory every morning. Commitments are tracked. Changes are investigated. Risks surface before someone remembers to look for them. |

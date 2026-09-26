@@ -1,0 +1,69 @@
+{
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.55,
+    "similarity_boost": 0.78,
+    "style": 0.12,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "seed": 1848,
+  "lines": [
+    {
+      "id": "line01",
+      "seconds": 3.16,
+      "planned": 4.0
+    },
+    {
+      "id": "line02",
+      "seconds": 11.89,
+      "planned": 10.5
+    },
+    {
+      "id": "line03",
+      "seconds": 7.2,
+      "planned": 7.0
+    },
+    {
+      "id": "line04",
+      "seconds": 11.89,
+      "planned": 11.0
+    },
+    {
+      "id": "line05",
+      "seconds": 6.73,
+      "planned": 6.0
+    },
+    {
+      "id": "line06",
+      "seconds": 5.48,
+      "planned": 5.0
+    },
+    {
+      "id": "line07",
+      "seconds": 6.08,
+      "planned": 5.3
+    },
+    {
+      "id": "line08",
+      "seconds": 10.31,
+      "planned": 11.2
+    },
+    {
+      "id": "line09",
+      "seconds": 7.99,
+      "planned": 6.8
+    },
+    {
+      "id": "line10",
+      "seconds": 12.07,
+      "planned": 10.5
+    },
+    {
+      "id": "line11",
+      "seconds": 4.23,
+      "planned": 4.8
+    }
+  ]
+}

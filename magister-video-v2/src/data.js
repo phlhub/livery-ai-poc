@@ -304,7 +304,7 @@ const NARRATION = [
   { id: 'line02', start: 7.4, dur: 10.5, text: 'Meetings, messages, support, consumption, delivery, risk… each living in its own system. Keeping it all connected quietly consumes much of a CSAM’s week.' },
   { id: 'line03', start: 22.6, dur: 7.0, text: 'Step back, and the problem becomes clear. The information isn’t disconnected. The operating model is.' },
   { id: 'line04', start: 30.9, dur: 11.0, text: 'Not a chatbot. Not another automation. Magister is a persistent intelligence layer that understands the account, maintains context, and notices when something changes.' },
-  { id: 'line05', start: 42.4, dur: 6.0, text: 'Specialized agents take ownership of specific responsibilities—and continuously monitor them over time.' },
+  { id: 'line05', start: 43.3, dur: 6.0, text: 'Specialized agents take ownership of specific responsibilities—and continuously monitor them over time.' },
   { id: 'line06', start: 52.4, dur: 5.0, text: 'Traditional automation follows a script. It’s triggered, it runs, and it stops.' },
   { id: 'line07', start: 61.3, dur: 5.3, text: 'An agent owns a responsibility. It observes, understands, acts—and keeps watching.' },
   { id: 'line08', start: 69.6, dur: 11.2, text: 'The account no longer has to be reconstructed from memory every morning. Commitments are tracked. Changes are investigated. Risks surface before someone remembers to look for them.' },
