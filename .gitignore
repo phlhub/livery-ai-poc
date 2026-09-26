@@ -1,7 +1,7 @@
-maestro-video/out/qc*/
-maestro-video/out/segments/
-maestro-video/out/*.png
-maestro-video/out/render.log
-maestro-video/out/soundtrack.wav
-maestro-video/out/cues.json
-maestro-video/out/check/
+magister-video/out/qc*/
+magister-video/out/segments/
+magister-video/out/*.png
+magister-video/out/render.log
+magister-video/out/soundtrack.wav
+magister-video/out/cues.json
+magister-video/out/check/

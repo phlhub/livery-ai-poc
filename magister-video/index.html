@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magister · Reimagining the CSAM Role</title>
+<style>
+  @font-face { font-family: Inter; font-weight: 200; src: url(src/fonts/inter-latin-200-normal.woff2) format('woff2'); }
+  @font-face { font-family: Inter; font-weight: 300; src: url(src/fonts/inter-latin-300-normal.woff2) format('woff2'); }
+  @font-face { font-family: Inter; font-weight: 400; src: url(src/fonts/inter-latin-400-normal.woff2) format('woff2'); }
+  @font-face { font-family: Inter; font-weight: 500; src: url(src/fonts/inter-latin-500-normal.woff2) format('woff2'); }
+  @font-face { font-family: Inter; font-weight: 600; src: url(src/fonts/inter-latin-600-normal.woff2) format('woff2'); }
+  html, body { margin: 0; height: 100%; background: #000; color: #9aa6b8; font: 13px Inter, sans-serif; overflow: hidden; }
+  #wrap { position: absolute; inset: 0 0 44px 0; display: flex; align-items: center; justify-content: center; }
+  canvas { max-width: 100%; max-height: 100%; aspect-ratio: 16/9; background: #05070b; }
+  #bar { position: absolute; left: 0; right: 0; bottom: 0; height: 44px; display: flex; align-items: center; gap: 12px; padding: 0 16px; box-sizing: border-box; }
+  #bar input { flex: 1; }
+  #bar button { background: #111722; color: #dde3ea; border: 1px solid #263041; border-radius: 6px; padding: 5px 12px; font: inherit; cursor: pointer; }
+  body.render #bar { display: none; }
+  body.render #wrap { inset: 0; }
+  body.render canvas { max-width: none; max-height: none; }
+</style>
+</head>
+<body>
+<div id="wrap"><canvas id="c" width="1920" height="1080"></canvas></div>
+<div id="bar">
+  <button id="play">Play</button>
+  <input id="scrub" type="range" min="0" max="108" step="0.0333" value="0">
+  <span id="time">0.0s</span>
+</div>
+<script src="src/core.js"></script>
+<script src="src/data.js"></script>
+<script src="src/scene.js"></script>
+<script>
+  // Preview player. Space = play/pause, ←/→ = ±1s (shift: ±5s). Rendering is driven by tools/render.mjs.
+  const cv = document.getElementById('c');
+  const params = new URLSearchParams(location.search);
+  const renderMode = params.has('render');
+  if (renderMode) document.body.classList.add('render');
+  window.ready = (async () => {
+    await Promise.all([200, 300, 400, 500, 600].map((w) => document.fonts.load(`${w} 20px Inter`)));
+    initScene(cv);
+    window.renderFrame = renderFrame;
+    window.audioCues = audioCues;
+    return true;
+  })();
+  if (!renderMode) {
+    let t = parseFloat(params.get('t') || '0'), playing = false, last = 0;
+    const scrub = document.getElementById('scrub'), lab = document.getElementById('time'), btn = document.getElementById('play');
+    const show = () => { renderFrame(t); scrub.value = t; lab.textContent = t.toFixed(1) + 's'; };
+    const loop = (now) => {
+      if (playing) { t += (now - last) / 1000; if (t >= DURATION) { t = DURATION; playing = false; btn.textContent = 'Play'; } show(); }
+      last = now; requestAnimationFrame(loop);
+    };
+    window.ready.then(() => { show(); requestAnimationFrame(loop); });
+    btn.onclick = () => { playing = !playing; btn.textContent = playing ? 'Pause' : 'Play'; if (t >= DURATION) t = 0; };
+    scrub.oninput = () => { t = parseFloat(scrub.value); show(); };
+    addEventListener('keydown', (e) => {
+      if (e.code === 'Space') { btn.onclick(); e.preventDefault(); }
+      if (e.code === 'ArrowRight') { t = Math.min(DURATION, t + (e.shiftKey ? 5 : 1)); show(); }
+      if (e.code === 'ArrowLeft') { t = Math.max(0, t - (e.shiftKey ? 5 : 1)); show(); }
+    });
+  }
+</script>
+</body>
+</html>
