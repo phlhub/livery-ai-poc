@@ -12,3 +12,5 @@ magister-video-v2/out/*.png
 magister-video-v2/out/render.log
 magister-video-v2/out/soundtrack.wav
 magister-video-v2/out/cues.json
+
+magister-video-v2/narration/samples/
