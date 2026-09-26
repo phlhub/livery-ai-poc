@@ -1110,7 +1110,7 @@ function renderFrame(t) {
   ctx.globalAlpha = 1;
   ctx.drawImage(A.vig, 0, 0);
   const f = Math.round(t * FPS);
-  ctx.save(); ctx.globalAlpha = 0.035; ctx.fillStyle = A.grain[f % A.grain.length];
+  ctx.save(); ctx.globalAlpha = 0.014; ctx.fillStyle = A.grain[f % A.grain.length];
   ctx.translate((f * 37) % 256, (f * 91) % 256); ctx.fillRect(-256, -256, W + 512, H + 512); ctx.restore();
   const black = Math.max(1 - seg(t, 0, 1.2, E.sine), seg(t, T.fadeOut, DURATION - 0.2, E.sine));
   if (black > 0) { ctx.fillStyle = `rgba(0,0,0,${black})`; ctx.fillRect(0, 0, W, H); }

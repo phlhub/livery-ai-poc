@@ -32,7 +32,7 @@ async function worker(k) {
   if (a >= b) return null;
   const seg = path.join(tmp, `seg_${String(k).padStart(2, '0')}.mp4`);
   const ff = spawn(FF, ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'png', '-i', '-',
-    '-c:v', 'libx264', '-preset', 'slow', '-crf', '15', '-tune', 'grain', '-pix_fmt', 'yuv420p',
+    '-c:v', 'libx264', '-preset', 'slow', '-crf', '18', '-pix_fmt', 'yuv420p',
     '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', '-r', String(FPS), seg], { stdio: ['pipe', 'inherit', 'inherit'] });
   const { browser, frame } = await openFilm(srv);
   for (let f = a; f < b; f++) {
