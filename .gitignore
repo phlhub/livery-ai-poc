@@ -5,3 +5,10 @@ magister-video/out/render.log
 magister-video/out/soundtrack.wav
 magister-video/out/cues.json
 magister-video/out/check/
+magister-video-v2/out/qc*/
+magister-video-v2/out/check*/
+magister-video-v2/out/segments/
+magister-video-v2/out/*.png
+magister-video-v2/out/render.log
+magister-video-v2/out/soundtrack.wav
+magister-video-v2/out/cues.json

@@ -1,0 +1,43 @@
+1
+00:00:02,600 --> 00:00:06,600
+At the center of every customer account is one person.
+
+2
+00:00:07,400 --> 00:00:17,900
+Meetings, messages, support, consumption, delivery, risk… each living in its own system. Keeping it all connected quietly consumes much of a CSAM’s week.
+
+3
+00:00:22,600 --> 00:00:29,600
+Step back, and the problem becomes clear. The information isn’t disconnected. The operating model is.
+
+4
+00:00:30,900 --> 00:00:41,900
+Not a chatbot. Not another automation. Magister is a persistent intelligence layer that understands the account, maintains context, and notices when something changes.
+
+5
+00:00:42,400 --> 00:00:48,400
+Specialized agents take ownership of specific responsibilities—and continuously monitor them over time.
+
+6
+00:00:52,400 --> 00:00:57,400
+Traditional automation follows a script. It’s triggered, it runs, and it stops.
+
+7
+00:01:01,300 --> 00:01:06,600
+An agent owns a responsibility. It observes, understands, acts—and keeps watching.
+
+8
+00:01:09,600 --> 00:01:20,800
+The account no longer has to be reconstructed from memory every morning. Commitments are tracked. Changes are investigated. Risks surface before someone remembers to look for them.
+
+9
+00:01:25,300 --> 00:01:32,100
+And when something genuinely requires human judgment, it comes to the CSAM—with the context already assembled.
+
+10
+00:01:37,000 --> 00:01:47,500
+That changes the job itself. Less time maintaining the account. More time with customer leaders, navigating difficult conversations, making decisions, and driving outcomes.
+
+11
+00:02:06,300 --> 00:02:11,100
+So the real question isn’t how much faster AI can make the CSAM.
